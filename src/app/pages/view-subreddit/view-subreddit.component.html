@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="row">
+    <div class="col-4">
+      <div class="form">
+        <div class="row my-3">
+          <label>Title</label>
+          <input
+            type="text"
+            readonly
+            value="{{ subredditDto?.subRedditName }}"
+            class="form-control"
+          />
+        </div>
+        <div class="row my-3">
+          <label>Description</label>
+          <input
+            type="text"
+            readonly
+            value="{{ subredditDto?.description }}"
+            class="form-control"
+          />
+        </div>
+        <div class="row-my-3">
+          <button (click)="goToSubreddits()" class="btn btn-primary">
+            Subreddit List
+          </button>
+        </div>
+      </div>
+    </div>
+    <div></div>
+  </div>
+</div>
